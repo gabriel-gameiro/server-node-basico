@@ -1,0 +1,53 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/teste": {
+      "get": {
+        "tags": [
+          "Teste"
+        ],
+        "description": "Endpoint para teste do servidor.",
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "query",
+            "type": "string",
+            "description": "Nome do usuário que executa o teste.",
+            "default": "User"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}
