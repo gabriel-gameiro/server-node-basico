@@ -15,4 +15,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD [ "node", "npm start" ]
+CMD [ "node", "index.js" ]
