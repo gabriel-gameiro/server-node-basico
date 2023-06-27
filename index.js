@@ -4,8 +4,8 @@ const swagger = require('swagger-ui-express');
 const swaggerFile = require('./swagger_output.json');
 
 // Iniciando server
-http.createServer(app).listen('3000');
-console.log("Server iniciado na porta :3000");
+http.createServer(app).listen('8080');
+console.log("Server iniciado na porta :8080");
 
 // Subindo swagger gerado
 app.use('/docs', swagger.serve, swagger.setup(swaggerFile));
